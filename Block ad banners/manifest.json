@@ -1,0 +1,24 @@
+{
+    "name": "Block ad banners",
+    "version": "6.04",
+    "icons": { "128": "ad-lock.png" },
+    "description": "web site의 광고배너를 차단하여 광고없이 편리한 사이트 이용을 돕습니다.",
+
+    "browser_action": {
+        "browser_style": true,
+        "default_title": "popup",
+        "default_popup": "popup.html"
+    },
+    "background": {
+        "scripts": [
+            "blockedsites.js", "background.js"
+        ]
+    },
+    "permissions": ["activeTab", "<all_urls>", "tabs", "webRequest", "webRequestBlocking", "http://*/", "https://*/", "*://ppss.kr/*", "*://*.ygosu.com/*", "*://*.ygosu.net/*"],
+    "content_scripts": [{
+        "matches": ["*://*/*", "*://ppss.kr/*", "*://*.ygosu.com/*", "*://*.ygosu.net/*"],
+        "all_frames": true,
+        "js": ["getcurrentURL.js"]
+    }],
+    "manifest_version": 2
+}
