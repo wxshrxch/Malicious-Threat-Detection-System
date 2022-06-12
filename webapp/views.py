@@ -466,15 +466,7 @@ def uploadOcr(request):
         fs = FileSystemStorage(location=media_dir)
         name = fs.save(file_name, uploaded_file)
         file_sha='b'
-        # file_id = file_upload(media_dir+'/'+file_name)
-        # status = ''
-        # cnt = 0
-        # while status != 'completed' and cnt != 10:
-        #     file_json = file_report(file_id)
-        #     status = file_json['data']['attributes']['status']
-        #     cnt += 1
-        #     print(status, cnt)
-        # file_sha = file_json['meta']['file_info']['sha256']
+
         fileName = file_name.split('.')[0] + '_OCR.pdf'
         excute_ocr(BASE_DIR+'/'+media_dir+'/'+file_name, file_sha,fileName)
         old_file = os.path.join(BASE_DIR + '/media/'+str(file_sha),'safe-output.pdf')
