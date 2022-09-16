@@ -1,7 +1,8 @@
 # Malicious-Threat-Detection-System
 
 #### 최종 결과물의 자세한 내용은 [[2조]악성위협감지스템_결과보고서.pdf](https://github.com/chaeuny/Malicious-Threat-Detection-System/blob/1180a346b4be02037f64b433bff14d68c3bbc0c0/%5B2%EC%A1%B0%5D%EC%95%85%EC%84%B1%EC%9C%84%ED%98%91%EA%B0%90%EC%A7%80%EC%8A%A4%ED%85%9C_%EA%B2%B0%EA%B3%BC%EB%B3%B4%EA%B3%A0%EC%84%9C%20(1).pdf) 에 기록되어있습니다.
-<br>
+
+
 #### 분기별 프로젝트 진행 내역은 제안발표.중간발표,최종발표 pdf를 통해서 확인할 수 있습니다. 
 
 #### 2022년 1학기 IT 융합공학부 사이버보안 트랙 캡스톤 디자인에서 진행한 프로젝트 입니다.
